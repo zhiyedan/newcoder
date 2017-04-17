@@ -50,7 +50,7 @@ public class BiTreeRebuild {
         if(root != null){
             afterOutput(root.left);
             afterOutput(root.right);
-            System.out.print(root.val+" ");
+            System.out.print(root.val+"   ");
         }
     }
 }
