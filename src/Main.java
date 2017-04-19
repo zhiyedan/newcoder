@@ -1,4 +1,5 @@
 import mianjing.question.BiTreeRebuild;
+import mianjing.question.Fibonacci;
 import mianjing.question.MinNumberInRotateArray;
 
 import java.util.Scanner;
@@ -8,14 +9,11 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        MinNumberInRotateArray minNumberInRotateArray = new MinNumberInRotateArray();
-        Scanner sc = new Scanner(System.in);
-        String[] strings = sc.nextLine().split(" ");
-        int[] nums = new int[strings.length];
-        for(int i=0;i<strings.length;i++){
-            nums[i] = Integer.parseInt(strings[i]);
+        Fibonacci fibonacci = new Fibonacci();
+        int result = fibonacci.solution(4);
+        for(int i=1;i<=40;i++){
+            System.out.print(fibonacci.solution(i)+" ");
         }
-        int result = minNumberInRotateArray.findMinNum(nums);
-        System.out.println(result);
+//        System.out.println(result);
     }
 }
