@@ -1,6 +1,7 @@
-package mianjing.question;
+package SwordToOffer.question;
 
 /**
+ * forg 可以跳任意台阶
  * Created by zhiyedan on 4/20/17.
  */
 public class JumpFloor2 {

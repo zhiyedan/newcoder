@@ -1,7 +1,7 @@
-package mianjing.question;
+package SwordToOffer.question;
 //根据先序和中序 重建二叉树
 
-import mianjing.resc.TreeNode;
+import SwordToOffer.resc.TreeNode;
 
 import java.util.Arrays;
 

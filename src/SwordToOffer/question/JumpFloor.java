@@ -1,4 +1,4 @@
-package mianjing.question;
+package SwordToOffer.question;
 
 /**
  * 一只青蛙一次可以跳上1级台阶，也可以跳上2级,n阶台阶，共有多少种跳法？
