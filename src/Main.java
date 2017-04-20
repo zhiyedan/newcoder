@@ -5,8 +5,8 @@ import SwordToOffer.question.*;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        Power power = new Power();
-        ;
-        System.out.println(power.solution(3,5));
+        int [] array = {2,4,6,1,3,5,7};
+        ReOrderArray reOrderArray = new ReOrderArray();
+        reOrderArray.solution(array);
     }
 }
