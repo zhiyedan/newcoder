@@ -9,10 +9,9 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        Fibonacci fibonacci = new Fibonacci();
-        int result = fibonacci.solution(4);
-        for(int i=1;i<=40;i++){
-            System.out.print(fibonacci.solution(i)+" ");
+        int[] array = new int[3];
+        for(int i:array){
+            System.out.println(i);
         }
 //        System.out.println(result);
     }
