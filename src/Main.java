@@ -6,10 +6,13 @@ import SwordToOffer.resc.ListNode;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        ListNode head = ListNode.creatList();
-        while(head!=null){
-            System.out.println(head.val);
-            head = head.next;
+        ListNode head1 = ListNode.creatList();
+        ListNode head2 = ListNode.creatList(new int[]{0,2,5,9,10});
+        MergeListNode mergeListNode = new MergeListNode();
+        mergeListNode.solution(head1,head2);
+        while(head1!=null){
+            System.out.println(head1.val);
+            head1 = head1.next;
         }
     }
 }
