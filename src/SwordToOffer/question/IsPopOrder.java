@@ -14,7 +14,7 @@ import java.util.Stack;
  * 网上打思路是错误打。。。
  */
 public class IsPopOrder {
-    //添加辅助stack,验证失败！！！
+    //添加辅助stack
     public boolean solution(int [] pushA,int [] popA){
         Stack<Integer> stack = new Stack();
         if(pushA.length==0 || popA.length==0)
