@@ -6,8 +6,7 @@ import SwordToOffer.resc.ListNode;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        int [][] matrix = {{1},{2},{3},{4}};
-        PrintClockwiseMatrix p = new PrintClockwiseMatrix();
-        System.out.println(p.solution(matrix).toString());
+        IsPopOrder isPopOrder = new IsPopOrder();
+        System.out.println(isPopOrder.solution(new int[]{1,2,3,4,5},new int[] {4,5,3,2,1}));
     }
 }
