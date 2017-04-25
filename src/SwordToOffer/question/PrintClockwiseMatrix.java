@@ -9,6 +9,9 @@ import java.util.ArrayList;
  * 右行：（i+1,col-i-1）->(row-i-1,col-i-1)
  * 下行：(row-i-1,col-i-2)->(row-i-1,i)
  * 左行：(row-i-2,i)->(i+1,i)
+ *
+ * Attention:前提条件是起始行(列)小于等于结束行(列)
+ *
  * Created by zhiyedan on 4/24/17.
  */
 public class PrintClockwiseMatrix {
