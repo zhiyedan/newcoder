@@ -7,6 +7,6 @@ import SwordToOffer.resc.ListNode;
 public class Main {
     public static void main(String[] args) throws Exception {
         IsPopOrder isPopOrder = new IsPopOrder();
-        System.out.println(isPopOrder.solution(new int[]{1,2,3,4,5},new int[] {4,5,3,2,1}));
+        System.out.println(isPopOrder.solution(new int[]{1,2,3,4,5},new int[] {4,3,5,2,1}));
     }
 }

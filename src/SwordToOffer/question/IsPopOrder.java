@@ -1,6 +1,7 @@
 package SwordToOffer.question;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 /**
  * 第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序
@@ -9,10 +10,26 @@ import java.util.Arrays;
  * 但4,3,5,1,2就不可能是该压栈序列的弹出序列
  * Created by zhiyedan on 4/25/17.
  *
- * 思路：新建数组，存放状态，0表示该数字还未入栈，1表示入栈，2表示已经出战。
+ * 思路1：新建数组，存放状态，0表示该数字还未入栈，1表示入栈，2表示已经出战。
+ * 网上打思路是错误打。。。
  */
 public class IsPopOrder {
+    //添加辅助stack,验证失败！！！
     public boolean solution(int [] pushA,int [] popA){
+        Stack<Integer> stack = new Stack();
+        if(pushA.length==0 || popA.length==0)
+            return false;
+        int j=0;
+        for(int i=0;i<popA.length;i++){
+            stack.push(pushA[i]);
+            while(j<popA.length && stack.peek()==popA[j]){
+                stack.pop();
+                j++;
+            }
+        }
+        return stack.empty()? true : false;
+    }
+    public boolean solution1(int [] pushA,int [] popA){
         boolean flag = true;
         int num = pushA.length;
         int[] array = new int[num];
