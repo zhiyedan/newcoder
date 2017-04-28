@@ -12,16 +12,16 @@ import java.util.Collections;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        arrayList.add(1);
-        f(arrayList);
-        f(arrayList);
-        System.out.println(arrayList.toString());
+    /*   TreeNode root =  TreeNode.createExampleTree();
+        FindTreePath findTreePath = new FindTreePath();
+        System.out.println(findTreePath.solution(root,22).toString());*/
+        String i = "1";
+        fun(i);
+        fun(i);
+        System.out.println(i);
     }
-    public static void f(ArrayList<Integer> arrayList){
-        ArrayList<Integer> re = new ArrayList<>(arrayList);
-//        Collections.copy(re,arrayList);
-//        re.clone(arrayList);
-        re.add(2);
+
+    public static void fun(String i) {
+        i = i.concat("12");
     }
 }
