@@ -13,6 +13,7 @@ public class RandomListNodeClone {
         RandomListNode result = new RandomListNode(-1);
         RandomListNode resulttemp = result;
         RandomListNode pHeadtemp = pHead;
+        //复制一遍
         while (pHead != null) {
             RandomListNode node = new RandomListNode(pHead.label);
             result.next = node;
@@ -21,6 +22,7 @@ public class RandomListNodeClone {
         }
         pHead = pHeadtemp;
         result = resulttemp.next;
+        //
         while(pHead != null){
             RandomListNode goalNode = pHead.random;
             int index = findRandomindex(pHeadtemp,goalNode);

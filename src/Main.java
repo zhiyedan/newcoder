@@ -11,17 +11,12 @@ import java.util.Collections;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-
-    /*   TreeNode root =  TreeNode.createExampleTree();
-        FindTreePath findTreePath = new FindTreePath();
-        System.out.println(findTreePath.solution(root,22).toString());*/
-        String i = "1";
-        fun(i);
-        fun(i);
-        System.out.println(i);
-    }
-
-    public static void fun(String i) {
-        i = i.concat("12");
+        TreeNode root = TreeNode.createExampleTree();
+        BSTConvertList bst = new BSTConvertList();
+        TreeNode result = bst.solution(root);
+        while (result!=null){
+            System.out.println(result.val);
+            result = result.right;
+        }
     }
 }
