@@ -11,9 +11,7 @@ import java.util.Collections;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        Permutation permutation = new Permutation();
-        for(String string : permutation.soulution("abcd")){
-            System.out.println(string);
-        }
+        MoreThanHalfNum m = new MoreThanHalfNum();
+        System.out.println(m.solution(new int[]{1,2,3,2,4,2,5,2,3}));
     }
 }
