@@ -11,12 +11,9 @@ import java.util.Collections;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        TreeNode root = TreeNode.createExampleTree();
-        BSTConvertList bst = new BSTConvertList();
-        TreeNode result = bst.solution(root);
-        while (result!=null){
-            System.out.println(result.val);
-            result = result.right;
+        Permutation permutation = new Permutation();
+        for(String string : permutation.soulution("abcd")){
+            System.out.println(string);
         }
     }
 }
