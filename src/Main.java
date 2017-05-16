@@ -12,8 +12,8 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        int i = 1;
-        Stack<Integer> stack1 = new Stack<>();
-        System.out.println(stack1.peek()>1);
+        FindGreatestSumOfSubArray find = new FindGreatestSumOfSubArray();
+        int max = find.solution(new int[]{6,-3,-2,7,-15,1,2,2});
+        System.out.println(max);
     }
 }
