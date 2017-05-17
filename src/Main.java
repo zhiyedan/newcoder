@@ -12,11 +12,8 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        String a = "32";
-        String b = "3653";
-        PrintMinNumber printMinNumber = new PrintMinNumber();
-//        System.out.println(a.compareTo(b));
-//        System.out.println(printMinNumber.stringComparator(a,b));
-        System.out.println(printMinNumber.solution2(new int[]{3,32,321}));
+        GetUglyNumber uglyNumber = new GetUglyNumber();
+        for(int i=3;i<10;i++){
+        System.out.println(uglyNumber.solution(i));}
     }
 }
