@@ -12,8 +12,11 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        FindGreatestSumOfSubArray find = new FindGreatestSumOfSubArray();
-        int max = find.solution(new int[]{6,-3,-2,7,-15,1,2,2});
-        System.out.println(max);
+        String a = "32";
+        String b = "3653";
+        PrintMinNumber printMinNumber = new PrintMinNumber();
+//        System.out.println(a.compareTo(b));
+//        System.out.println(printMinNumber.stringComparator(a,b));
+        System.out.println(printMinNumber.solution(new int[]{3,32,321}));
     }
 }
