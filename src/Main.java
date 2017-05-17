@@ -17,6 +17,6 @@ public class Main {
         PrintMinNumber printMinNumber = new PrintMinNumber();
 //        System.out.println(a.compareTo(b));
 //        System.out.println(printMinNumber.stringComparator(a,b));
-        System.out.println(printMinNumber.solution(new int[]{3,32,321}));
+        System.out.println(printMinNumber.solution2(new int[]{3,32,321}));
     }
 }
