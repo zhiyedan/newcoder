@@ -12,8 +12,7 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        GetUglyNumber uglyNumber = new GetUglyNumber();
-        for(int i=3;i<10;i++){
-        System.out.println(uglyNumber.solution(i));}
+        FirstNotRepeatingChar f = new FirstNotRepeatingChar();
+        System.out.println(f.solution("googgle"));
     }
 }
