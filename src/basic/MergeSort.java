@@ -18,8 +18,6 @@ public class MergeSort {
         System.out.println("the Array is :");
         showArray(array);
         mergeSort(array,0,array.length-1);
-        showArray(array);
-
     }
 
     public void mergeSort(int[] array, int begin, int end) {
@@ -27,6 +25,7 @@ public class MergeSort {
             int mid = (begin + end) >> 1;
             mergeSort(array, begin, mid);
             mergeSort(array, mid + 1, end);
+
             merge(array,begin,mid,end);
         }
     }
@@ -53,6 +52,7 @@ public class MergeSort {
             temp[index++] = array[p2++];
         }
         // 复制回原数组
+        // TODO 下面的这种做法是错误的，导致array的长度发生了变化！想偷懒却出现了错误！！！
 //        array = Arrays.copyOfRange(temp,begin,end+1);
         for(int i=begin;i<=end;i++){
             array[i] = temp[i];
