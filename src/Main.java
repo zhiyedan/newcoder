@@ -1,6 +1,7 @@
 import SwordToOffer.question.*;
 import SwordToOffer.resc.ListNode;
 import SwordToOffer.resc.TreeNode;
+import basic.MergeSort;
 import org.omg.PortableInterceptor.INACTIVE;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        FirstNotRepeatingChar f = new FirstNotRepeatingChar();
-        System.out.println(f.solution("googgle"));
+        MergeSort sort = new MergeSort();
+        sort.sort();
     }
 }
