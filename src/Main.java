@@ -12,8 +12,8 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        InversePairs inversePairs = new InversePairs();
-        int count = inversePairs.solution(new int[]{4,3,2,6,1,0});
+        GetNumberOfK getNumberOfK = new GetNumberOfK();
+        int count = getNumberOfK.solution(new int[]{1,2,3,3,3,3},3);
         System.out.println(count);
     }
 }
