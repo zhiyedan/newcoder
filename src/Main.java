@@ -1,7 +1,6 @@
 import SwordToOffer.question.*;
 import SwordToOffer.resc.ListNode;
 import SwordToOffer.resc.TreeNode;
-import basic.MergeSort;
 import org.omg.PortableInterceptor.INACTIVE;
 
 import java.util.ArrayList;
@@ -13,7 +12,8 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        MergeSort sort = new MergeSort();
-        sort.sort();
+        InversePairs inversePairs = new InversePairs();
+        int count = inversePairs.solution(new int[]{4,3,2,6,1,0});
+        System.out.println(count);
     }
 }
