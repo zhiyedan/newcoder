@@ -12,8 +12,11 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        GetNumberOfK getNumberOfK = new GetNumberOfK();
-        int count = getNumberOfK.solution(new int[]{1,2,3,3,3,3},3);
-        System.out.println(count);
+        FindNumsAppearOnce findNumsAppearOnce = new FindNumsAppearOnce();
+        int [] a = new int[1];
+        int [] b = new int[1];
+        findNumsAppearOnce.solution(new int []{2,4,3,6,3,2,5,5},a,b);
+        System.out.println(a[0]);
+        System.out.println(b[0]);
     }
 }
