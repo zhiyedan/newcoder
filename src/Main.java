@@ -12,10 +12,8 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        LeftRotateString l = new LeftRotateString();
-        for (int i = 0; i < 10; i++) {
-            System.out.println(l.solution("abcdefg", i));
-        }
+        ReverseSentence reverseSentence = new ReverseSentence();
+        System.out.println(reverseSentence.solution("  "));
 
     }
 }
