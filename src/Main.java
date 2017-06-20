@@ -12,8 +12,10 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        FindNumbersWithSum f = new FindNumbersWithSum();
-        System.out.println(f.solution(new int[]{2,5,6,7},11));
+        LeftRotateString l = new LeftRotateString();
+        for (int i = 0; i < 10; i++) {
+            System.out.println(l.solution("abcdefg", i));
+        }
 
     }
 }
