@@ -12,11 +12,10 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        FindNumsAppearOnce findNumsAppearOnce = new FindNumsAppearOnce();
-        int [] a = new int[1];
-        int [] b = new int[1];
-        findNumsAppearOnce.solution(new int []{2,4,3,6,3,2,5,5},a,b);
-        System.out.println(a[0]);
-        System.out.println(b[0]);
+//        FindContinuousSequence f = new FindContinuousSequence();
+//        System.out.println(f.solution(100));
+        double x = 2.0000;
+
+        System.out.println((double) 13/2);
     }
 }
