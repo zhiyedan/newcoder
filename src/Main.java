@@ -12,10 +12,8 @@ import java.util.Stack;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-//        FindContinuousSequence f = new FindContinuousSequence();
-//        System.out.println(f.solution(100));
-        double x = 2.0000;
+        FindNumbersWithSum f = new FindNumbersWithSum();
+        System.out.println(f.solution(new int[]{2,5,6,7},11));
 
-        System.out.println((double) 13/2);
     }
 }
