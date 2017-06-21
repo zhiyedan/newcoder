@@ -10,8 +10,7 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        Set<Integer> set = new HashSet<>();
-        set.add(1);
-        System.out.println(set.add(1));
+        LastRemaining_Solution l = new LastRemaining_Solution();
+        System.out.println(l.solution(5,2));
     }
 }
