@@ -10,7 +10,11 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        LastRemaining_Solution l = new LastRemaining_Solution();
-        System.out.println(l.solution(5,2));
+
+        StrToInt strToInt = new StrToInt();
+        Scanner scanner = new Scanner(System.in);
+        while (true){
+            System.out.println(strToInt.solution(scanner.nextLine()));
+        }
     }
 }
