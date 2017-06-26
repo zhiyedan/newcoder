@@ -10,11 +10,9 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-
-        StrToInt strToInt = new StrToInt();
-        Scanner scanner = new Scanner(System.in);
-        while (true){
-            System.out.println(strToInt.solution(scanner.nextLine()));
-        }
+        MatchPattern matchPattern = new MatchPattern();
+        char[] str = "bcbbabab".toCharArray();
+        char[] pattern = ".*a*a".toCharArray();
+        System.out.println(matchPattern.solution(str,pattern));
     }
 }
