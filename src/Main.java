@@ -10,7 +10,8 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        scan();
+//        scan();
+        listNodefun();
     }
     public static void scan(){
         IsNumeric isNumeric = new IsNumeric();
@@ -21,6 +22,13 @@ public class Main {
             char[] chars = string.toCharArray();
             System.out.println(isNumeric.solution2(chars));
         }
+    }
+    public static  void listNodefun(){
+        DeleteDuplication d = new DeleteDuplication();
+        ListNode head = ListNode.creatList();
+        ListNode.showList(head);
+        ListNode result = d.solution3(head);
+        ListNode.showList(result);
     }
 
 }
