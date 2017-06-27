@@ -4,7 +4,7 @@ import SwordToOffer.resc.TreeNode;
 
 /**
  * 判断一颗二叉树是不是对称的
- *
+ * 思路：左孩子的右子树==右孩子的左子树
  * Created by zhiyedan on 6/27/17.
  */
 public class IsSymmetricalTree {
