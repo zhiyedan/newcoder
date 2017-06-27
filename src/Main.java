@@ -11,7 +11,8 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws Exception {
 //        scan();
-        listNodefun();
+//        listNodefun();
+        treeNodeFun();
     }
     public static void scan(){
         IsNumeric isNumeric = new IsNumeric();
@@ -30,5 +31,10 @@ public class Main {
         ListNode result = d.solution3(head);
         ListNode.showList(result);
     }
-
+    public static void treeNodeFun(){
+        PrintTreeZhi p = new PrintTreeZhi();
+        TreeNode phead = TreeNode.createExampleTree();
+        System.out.println(PrintTreeFromTopToBottom.solution(phead));
+        System.out.println(p.solution(phead));
+    }
 }

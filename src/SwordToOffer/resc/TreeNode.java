@@ -23,7 +23,7 @@ public class TreeNode {
         root.right = right1;
         left1.left = left11;
         left1.right = left12;
-//        right1.left = right11;
+        right1.left = right11;
         return root;
     }
 }

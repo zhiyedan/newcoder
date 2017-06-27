@@ -10,7 +10,7 @@ import java.util.Queue;
  * Created by zhiyedan on 4/25/17.
  */
 public class PrintTreeFromTopToBottom {
-    public ArrayList<Integer> solution(TreeNode root) {
+    public static ArrayList<Integer> solution(TreeNode root) {
         ArrayList<Integer> result = new ArrayList<>();
         if (root == null)
             return result;
