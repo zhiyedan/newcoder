@@ -10,9 +10,10 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
+        medianTest();
 //        scan();
 //        listNodefun();
-        treeNodeFun();
+//        treeNodeFun();
     }
     public static void scan(){
         IsNumeric isNumeric = new IsNumeric();
@@ -37,5 +38,14 @@ public class Main {
         System.out.println(treeString);
         TreeNode treeNOde = TreeSerialize.Deserialize(treeString);
 
+    }
+    public static void medianTest() throws Exception{
+        MedianNumInsertAndGet m = new MedianNumInsertAndGet();
+        m.insert(1);
+        m.insert(5);
+        m.insert(8);
+        System.out.println(m.getMedian());
+        m.insert(10);
+        System.out.println(m.getMedian());
     }
 }
