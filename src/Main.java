@@ -32,9 +32,10 @@ public class Main {
         ListNode.showList(result);
     }
     public static void treeNodeFun(){
-        PrintTreeZhi p = new PrintTreeZhi();
         TreeNode phead = TreeNode.createExampleTree();
-        System.out.println(PrintTreeFromTopToBottom.solution(phead));
-        System.out.println(p.solution(phead));
+        String treeString = TreeSerialize.Serialize(phead);
+        System.out.println(treeString);
+        TreeNode treeNOde = TreeSerialize.Deserialize(treeString);
+
     }
 }
